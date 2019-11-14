@@ -4,7 +4,7 @@
   "description": "This is a wrapper for wavesurfer.js",
   "main": "src/index.js",
   "scripts": {
-    "dev": "vue serve src/Wrapper.vue",
+    "dev": "vue serve src/VueWaveSurfer.vue",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Isaiah Hunter",

@@ -1,17 +1,42 @@
 <template>
-  <WaveSurfer src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" :options="options">
+  <WaveSurfer :src="love" :options="options">
     <div></div>
   </WaveSurfer>
 </template>
 
 <script>
-import WaveSurfer from './WaveSurfer'
+import WaveSurfer from "./WaveSurfer";
+import Cursor from 'wavesurfer.js/dist/plugin/wavesurfer.cursor'
+import love from "./love.mp3";
 export default {
   components: {
     WaveSurfer
   },
-  options: {
-    
+  data() {
+    return {
+      options: {
+        cursorColor: 'transparent',
+        barWidth: 4,
+        barGap: 6,
+        waveColor: 'lightgrey',
+        progressColor: 'black',
+        responsive: true,
+        plugins: [
+          Cursor.create({
+            showTime: true,
+            opacity: 1,
+            customShowTimeStyle: {
+                'background-color': '#000',
+                color: '#fff',
+                padding: '2px',
+                'font-size': '10px'
+            }
+          })
+        ]
+        
+      },
+      love
+    };
   }
-}
+};
 </script>

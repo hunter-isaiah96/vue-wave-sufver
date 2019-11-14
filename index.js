@@ -1,4 +1,4 @@
-import WaveSurfer from '../components/WaveSurfer.vue';
+import WaveSurfer from './components/WaveSurfer.vue';
 
 const Components = {
   WaveSurfer

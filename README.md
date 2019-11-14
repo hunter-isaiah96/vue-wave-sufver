@@ -2,7 +2,7 @@
 
 ## Installation
 ```bash
-npm install vue-wavesurfer
+npm install https://github.com/hunter-isaiah96/vue-wavesurver.git
 ```
 
 ## Module

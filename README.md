@@ -1,19 +1,19 @@
 ## Installation
 ```bash
-npm install wavesurfer-vue
+npm install vue-wavesurfer
 ```
 
 ## Module
 As a global vue-cli plugin
 ```javascript
 import Vue from 'vue'
-import VueWaveSurfer from 'wavesurfer-vue'
+import VueWaveSurfer from 'vue-wavesurfer'
 
 Vue.use(VueWaveSurfer)
 ```
 As a nuxt global plugin
 ```javascript
-// plugins/wavesurfer-vue.js
+// plugins/vue-wavesurfer.js
 import Vue from 'vue'
 import VueWaveSurfer from 'wavesurfer-vue'
 
@@ -24,13 +24,13 @@ Vue.use(VueWaveSurfer)
 // nuxt.config.js
 export default {
   plugins: [
-    '~/plugins/wavesurfer-vue'
+    '~/plugins/vue-wavesurfer'
   ]
 }
 ```
 As a component plugin
 ```javascript
-import VueWaveSurfer from 'wavesurfer-vue'
+import VueWaveSurfer from 'vue-wavesurfer'
 export default {
   components: {
     VueWaveSurfer

@@ -1,5 +1,5 @@
 {
-  "name": "vue-wavesurfer",
+  "name": "vue-wave-surfer",
   "version": "1.0.0",
   "description": "This is a wrapper for wavesurfer.js",
   "main": "src/index.js",

@@ -1,10 +1,10 @@
 ## Installation
 ```bash
-npm install https://github.com/hunter-isaiah96/vue-wave-sufver.git
+npm i vue-wave-surfer
 ```
 or
 ```bash
-yarn add https://github.com/hunter-isaiah96/vue-wave-sufver.git
+yarn add vue-wave-surfer
 ```
 
 ## Module

@@ -1,3 +1,5 @@
+## STILL IN DEVELOPMENT!
+
 ## Installation
 ```bash
 npm install vue-wavesurfer

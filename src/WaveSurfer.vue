@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <slot />
-  </div>
+  <div></div>
 </template>
-<!-- eslint-disable -->
+
 <script>
 import WaveSurfer from "wavesurfer.js";
 export default {
@@ -15,12 +13,7 @@ export default {
   },
   mounted() {
     let options = this.options;
-    let wsOptions = Object.assign(
-      {
-        container: this.$el.firstChild
-      },
-      options
-    );
+    let wsOptions = Object.assign({ container: this.$el }, options);
     this.waveSurfer = new WaveSurfer.create(wsOptions);
     this.waveSurfer.load(this.src);
   },
@@ -31,7 +24,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-div > div {
+div {
   position: relative;
 }
 </style>

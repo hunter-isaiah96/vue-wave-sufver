@@ -4,11 +4,17 @@
   "description": "This is a wrapper for wavesurfer.js",
   "main": "index.js",
   "scripts": {
+    "dev": "vue serve src/Wrapper.vue",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Isaiah Hunter",
   "license": "ISC",
   "dependencies": {
     "wavesurfer.js": "^3.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunter-isaiah96/wavesurfer-vue.git"
+  },
+  "homepage": "https://github.com/hunter-isaiah96/wavesurfer-vue#readme"
 }

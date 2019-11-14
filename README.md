@@ -64,7 +64,7 @@ export default {
 See the list of options in the [official documentation](https://wavesurfer-js.org/docs/options.html)
 
 ## Using Plugins
-An example implenting the [Cursor](https://wavesurfer-js.org/plugins/cursor.html) plugin
+An example implementing the [Cursor](https://wavesurfer-js.org/plugins/cursor.html) plugin
 ```vue
 <script>
 import Cursor from 'wavesurfer.js/dist/plugin/wavesurfer.cursor';

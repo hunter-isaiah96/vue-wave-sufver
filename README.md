@@ -1,5 +1,3 @@
-## STILL IN DEVELOPMENT!
-
 ## Installation
 ```bash
 npm install https://github.com/hunter-isaiah96/vue-wave-sufver.git
@@ -78,6 +76,28 @@ export default {
           Cursor.create()
         ]
       }
+    }
+  }
+}
+</script>
+```
+
+## Capturing Events
+1. Create a vue-wave-surfer element and adding a ref to it
+2. Create a computed player property returning the elemenents waveSurfer object
+3. Access waveSurfer events and methods in the mounted() function
+```vue
+<vue-wave-surfer src="url.mp3" ref="surf"></vue-wave-surfer>
+<script
+export default {
+  mounted() {
+    this.player.on('ready', () => {
+      console.log('ready')
+    })
+  },
+  computed: {
+    player() {
+      return this.$refs.surf.waveSurfer
     }
   }
 }

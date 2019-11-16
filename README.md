@@ -11,15 +11,15 @@ yarn add vue-wave-surfer
 As a global vue-cli plugin
 ```javascript
 import Vue from 'vue'
-import VueWaveSurfer from 'vue-wavesurfer'
+import VueWaveSurfer from 'vue-wave-surfer'
 
 Vue.use(VueWaveSurfer)
 ```
 As a nuxt global plugin
 ```javascript
-// plugins/vue-wavesurfer.js
+// plugins/vue-wave-surfer.js
 import Vue from 'vue'
-import VueWaveSurfer from 'wavesurfer-vue'
+import VueWaveSurfer from 'vue-wave-surfer'
 
 Vue.use(VueWaveSurfer)
 ```
@@ -28,13 +28,13 @@ Vue.use(VueWaveSurfer)
 // nuxt.config.js
 export default {
   plugins: [
-    '~/plugins/vue-wavesurfer'
+    '~/plugins/vue-wave-surfer'
   ]
 }
 ```
 As a component plugin
 ```javascript
-import VueWaveSurfer from 'vue-wavesurfer'
+import VueWaveSurfer from 'vue-wave-surfer'
 export default {
   components: {
     VueWaveSurfer
@@ -86,6 +86,8 @@ export default {
 1. Create a vue-wave-surfer element and adding a ref to it
 2. Create a computed property returning the elemenents waveSurfer object
 3. Access waveSurfer events and methods in the mounted() function
+
+This is a client-only module so be sure to wrap it in a client-only tag if using nuxt
 ```vue
 <vue-wave-surfer src="url.mp3" ref="surf"></vue-wave-surfer>
 <script

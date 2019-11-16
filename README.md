@@ -11,15 +11,15 @@ yarn add vue-wave-surfer
 As a global vue-cli plugin
 ```javascript
 import Vue from 'vue'
-import VueWaveSurfer from 'vue-wavesurfer'
+import VueWaveSurfer from 'vue-wave-surfer'
 
 Vue.use(VueWaveSurfer)
 ```
 As a nuxt global plugin
 ```javascript
-// plugins/vue-wavesurfer.js
+// plugins/vue-wave-surfer.js
 import Vue from 'vue'
-import VueWaveSurfer from 'wavesurfer-vue'
+import VueWaveSurfer from 'vue-wave-surfer'
 
 Vue.use(VueWaveSurfer)
 ```
@@ -28,13 +28,13 @@ Vue.use(VueWaveSurfer)
 // nuxt.config.js
 export default {
   plugins: [
-    '~/plugins/vue-wavesurfer'
+    '~/plugins/vue-wave-surfer'
   ]
 }
 ```
 As a component plugin
 ```javascript
-import VueWaveSurfer from 'vue-wavesurfer'
+import VueWaveSurfer from 'vue-wave-surfer'
 export default {
   components: {
     VueWaveSurfer

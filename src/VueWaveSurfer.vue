@@ -5,14 +5,7 @@
 <script>
 import WaveSurfer from "wavesurfer.js";
 export default {
-  props: {
-    src: {
-      type: String,
-      default:
-        "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3"
-    },
-    options: Object
-  },
+  props: ['src', 'options'],
   data() {
     return {
       waveSurfer: {}
